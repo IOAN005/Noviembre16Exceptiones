@@ -1,3 +1,5 @@
+package com.corenetworks.presentacion;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -13,5 +15,25 @@ public class Main {
             // for you, but you can always add more by pressing Ctrl+F8.
             System.out.println("i = " + i);
         }
+        int []enteros=new int[5];
+        try {
+            enteros[5]=6;
+        }catch(ArrayIndexOutOfBoundsException e1 ) {
+            System.out.println("entra el catch del array");
+
+        }catch (Exception e1){
+            System.out.println(e1.getMessage());
+            System.out.println(e1.toString());
+            System.out.println(e1.getCause());
+
+        }finally {
+            System.out.println("entro al finally ");
+        }
+
+
+        //for (int i=0;i< enteros.length;i++){
+          //  enteros[i]=i*5;
+        System.out.println("despues de estructura try");
+
     }
 }
